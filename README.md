@@ -1,8 +1,8 @@
 # Getting-and-Cleaning-Data
-It was for Getting and Cleaning Data Course Project in Getting and Cleaning Data of Data Science Course in Coursera.
+This file explains codes for Course Project in "Getting and Cleaning Data" Course in Coursera.
 
 
-### Step 0. Package loading working directory setting
+### Package loading and working directory setting
 -------------
 ```
 library(utils); library(dplyr)
@@ -101,7 +101,7 @@ dataTidy <- group_by(dataMeanStd, subject, activity) %>%
 * I used `group_by()` and `summarise_at()` functions in `dplyr` package.
 * `dataTidy` is final result of the Step 5.
 
-### Export tidy data
+### Exporting tidy data
 -------------
 ```
 write.csv(dataTidy, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataTidy.csv")
