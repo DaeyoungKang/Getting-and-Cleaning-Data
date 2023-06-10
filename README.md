@@ -69,7 +69,7 @@ Then I merged Test and Train data using `rbind()` function. The `dataMerge` is t
 ### Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 -------------
 ```
-columnsHaveMeanStd <- c(grep("mean", names(dataMerge)), grep("std", names(dataMerge)))
+columnsHaveMeanStd <- c(grep("mean()", names(dataMerge)), grep("std()", names(dataMerge)))
 ```
 * The list of columns columns containing "mean" or "std" (abbreviation of standard deviation) using `grep()` function.
 ```
