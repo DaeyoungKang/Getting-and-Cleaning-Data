@@ -1,4 +1,4 @@
-`dataMeanStd` contains following columns. This code book describes in order of "(Column number) `Variable name` (Explanation)".
+`dataMeanStd` contains following columns. This code book describes in order of "(Column number) `(Variable name)` (Explanation)".
 Although the column of `dataTidy` is same, the value is the average of each variable for each activity and each subject in `dataMeanStd`.
 1 `Subject`: An identifier of the subjects who carried out the experiment (1 to 30).  
 2 `activity`: type of activity described in "activity_labels.txt" (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)  
