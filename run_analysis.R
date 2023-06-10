@@ -35,8 +35,7 @@ for (j in 1:12){
 dataMerge <- rbind(dataTest, dataTrain)
 
 ### Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-columnsHaveMeanStd <- c(grep("mean", names(dataMerge)), grep("std", names(dataMerge)))
-
+columnsHaveMeanStd <- c(grep("mean()", names(dataMerge)), grep("std()", names(dataMerge)))
 dataMeanStd <- dataMerge[, c(1, 2, columnsHaveMeanStd)] 
 
 ### Step 3. Uses descriptive activity names to name the activities in the data set
@@ -52,4 +51,3 @@ dataTidy <- group_by(dataMeanStd, subject, activity) %>%
 
 ### Export tidy data
 write.csv(dataTidy, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataTidy.csv")
-
