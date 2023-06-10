@@ -100,14 +100,4 @@ dataTidy <- group_by(dataMeanStd, subject, activity) %>%
   summarise_at(names(dataMeanStd)[-(1:2)], mean)
 ```
 * I used `group_by()` and `summarise_at()` functions in `dplyr` package.
-* `dataTidy` is result of the Step 5.
-
-### Exporting the data sets
--------------
-```
-write.csv(dataMeanStd, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataMeanStd.csv")
-write.csv(dataTidy, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataTidy.csv")
-```
-* I export the tidy data set as .csv format. You can see following files in this repository.  
-* `dataTidy.csv`: The data set in Step 5 (A second, independent tidy data set with the average of each variable for each activity and each subject).
-
+* `dataTidy` is result of the Step 5, which is uploaded dataTidy.txt in Coursera. 
