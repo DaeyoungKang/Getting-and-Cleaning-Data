@@ -77,6 +77,6 @@ dataTidy contains following columns. This code book describes in order of "(Colu
 76 `fBodyGyro-std()-Y`: Standard deviation of Fast Fourier Transform (FFT) applied body angular velocity signals in Y axis
 77 `fBodyGyro-std()-Z`: Standard deviation of Fast Fourier Transform (FFT) applied body angular velocity signals in Z axis
 78 `fBodyAccMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body linear acceleration signals
-79 `fBodyBodyAccJerkMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body linear jerk signals
-80 `fBodyBodyGyroMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body angular velocity signals
-81 `fBodyBodyGyroJerkMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body angular jerk signals
+79 `fBodyBodyAccJerkMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body body linear jerk signals
+80 `fBodyBodyGyroMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body body angular velocity signals
+81 `fBodyBodyGyroJerkMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body body angular jerk signals
