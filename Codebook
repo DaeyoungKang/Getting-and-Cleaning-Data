@@ -1,64 +1,82 @@
-dataTidy contains following columns.
-`Subject`: An identifier of the subjects who carried out the experiment (1 to 30).  
-`activity`: type of activity described in "activity_labels.txt" (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)  
-`tBodyAcc-mean()-X`: Mean of body linear acceleration signals in X axis
-`tBodyAcc-mean()-Y`: Mean of body linear acceleration signals in Y axis
-`tBodyAcc-mean()-Z`: Mean of body linear acceleration signals in Z axis
-`tGravityAcc-mean()-X`: Mean of gravity acceleration signals in X axis
-`tGravityAcc-mean()-Y`: Mean of gravity acceleration signals in Y zxis
-`tGravityAcc-mean()-Z`: Mean of gravity acceleration signals in Z axis
-`tBodyAccJerk-mean()-X`: Mean of body linear jerk signals in X axis
-`tBodyAccJerk-mean()-Y`: Mean of body linear jerk signals in Y axis
-`tBodyAccJerk-mean()-Z`: Mean of body linear jerk signals in Z axis
-`tBodyGyro-mean()-X`: Mean of angular velocity signals in X axis
-`tBodyGyro-mean()-Y`: Mean of angular velocity signals in Y axis
-`tBodyGyro-mean()-Z`: Mean of angular velocity signals in Z axis
-`tBodyGyroJerk-mean()-X`: Mean of angular jerk signals in signals in X axis
-`tBodyGyroJerk-mean()-Y`: Mean of angular jerk signals in signals in Y axis
-`tBodyGyroJerk-mean()-Z`: Mean of angular jerk signals in signals in Z axis
-`tBodyAccMag-mean()`: Mean of magnitude of three-dimensional body linear acceleration
-`tGravityAccMag-mean()`: Mean of magnitude of three-dimensional gravity acceleration
-`tBodyAccJerkMag-mean()`: Mean of magnitude of three-dimensional body jerk
-`tBodyGyroMag-mean()`: Mean of magnitude of three-dimensional angular velocity
-`tBodyGyroJerkMag-mean()`: Mean of magnitude of three-dimensional angular jerk
-`fBodyAcc-XYZ-mean()`: Mean of body linear acceleration signals in three directions of X, Y, and Z axes
-`fBodyAcc-XYZ-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of body linear acceleration signals in three directions in X, Y, and Z axes
-`fBodyAccJerk-XYZ-mean()`: Mean of body linear jerk signals in three directions of X, Y, and Z axes
-`fBodyAccJerk-XYZ-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of body linear jerk signals in three directions in X, Y, and Z axes
-`fBodyGyro-XYZ-mean()`: Mean of body angular velocity signals in three directions of X, Y, and Z axes
-`fBodyGyro-XYZ-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of body angular velocity signals in three directions in X, Y, and Z axes
-`fBodyAccMag-mean()`: Mean of magnitude of three-dimensional body linear acceleration signals
-`fBodyAccMag-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional body linear acceleration
-`fBodyAccJerkMag-mean()`: Mean of magnitude of three-dimensional body jerk signals
-`fBodyAccJerkMag-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional body jerk signals
-`fBodyGyroMag-mean()`: Mean of magnitude of three-dimensional body angular velocity signals
-`fBodyGyroMag-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of magnitude of body angular velocity signals
-`fBodyGyroJerkMag-mean()`: Mean of magnitude of three-dimensional body jerk signals
-`fBodyGyroJerkMag-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional body jerk signals
-`tBodyAcc-std()-X`: Standard deviation of body linear acceleration signals in X axis
-`tBodyAcc-std()-Y`: Standard deviation of body linear acceleration signals in Y axis
-`tBodyAcc-std()-Z`: Standard deviation of body linear acceleration signals in Z axis
-`tGravityAcc-std()-X`: Standard deviation of gravity acceleration signals in X axis
-`tGravityAcc-std()-Y`: Standard deviation of gravity acceleration signals in Y axis
-`tGravityAcc-std()-Z`: Standard deviation of gravity acceleration signals in Z axis
-`tBodyAccJerk-std()-X`: Standard deviation of body linear jerk signals in X axis
-`tBodyAccJerk-std()-Y`: Standard deviation of body linear jerk signals in Y axis
-`tBodyAccJerk-std()-Z`: Standard deviation of body linear jerk signals in Z axis
-`tBodyGyro-std()-X`: Standard deviation of body angular velocity in X axis
-`tBodyGyro-std()-Y`: Standard deviation of body angular velocity in Y axis
-`tBodyGyro-std()-Z`: Standard deviation of body angular velocity in Z axis
-`tBodyGyroJerk-std()-X`: Standard deviation of body angular jerk in X axis
-`tBodyGyroJerk-std()-Y`: Standard deviation of body angular jerk in Y axis
-`tBodyGyroJerk-std()-Z`: Standard deviation of body angular jerk in Z axis
-`tBodyAccMag-std()`: Standard deviation of magnitude of three-dimensional body linear acceleration signals
-`tGravityAccMag-std()`: Standard deviation of magnitude of three-dimensional gravity acceleration signals
-`tBodyAccJerkMag-std()`: Standard deviation of magnitude of three-dimensional body linear jerk signals
-`tBodyGyroMag-std()`: Standard deviation of magnitude of three-dimensional body angular velocity signals
-`tBodyGyroJerkMag-std()`: Standard deviation of magnitude of three-dimensional body angular jerk signals
-`fBodyAcc-std()-XYZ`: Standard deviation of body linear acceleration signals in three directions of X, Y, and Z axes
-`fBodyAccJerk-std()-XYZ`: Standard deviation of body linear jerk signals in three directions of X, Y, and Z axes
-`fBodyGyro-std()-XYZ`: Standard deviation of body angular velocity signals in three directions of X, Y, and Z axes
-`fBodyAccMag-std()`: Standard deviation of magnitude of three-dimensional body linear acceleration signals
-`fBodyBodyAccJerkMag-std()`: Standard deviation of magnitude of three-dimensional body linear jerk signals
-`fBodyBodyGyroMag-std()`: Standard deviation of magnitude of three-dimensional body angular velocity signals
-`fBodyBodyGyroJerkMag-std()`: Standard deviation of magnitude of three-dimensional body angular jerk signals
+dataTidy contains following columns. This code book describes in order of "(Column number) `Variable name` (Explanation)".
+1 `Subject`: An identifier of the subjects who carried out the experiment (1 to 30).  
+2 `activity`: type of activity described in "activity_labels.txt" (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)  
+3 `tBodyAcc-mean()-X` Mean of body linear acceleration signals in X axis
+4 `tBodyAcc-mean()-Y` Mean of body linear acceleration signals in Y axis
+5 `tBodyAcc-mean()-Z` Mean of body linear acceleration signals in Z axis
+6 `tGravityAcc-mean()-X` Mean of gravity acceleration signals in X axis
+7 `tGravityAcc-mean()-Y` Mean of gravity acceleration signals in Y zxis
+8 `tGravityAcc-mean()-Z` Mean of gravity acceleration signals in Z axis
+9 `tBodyAccJerk-mean()-X` Mean of body linear jerk signals in X axis
+10 `tBodyAccJerk-mean()-Y` Mean of body linear jerk signals in Y axis
+11 `tBodyAccJerk-mean()-Z` Mean of body linear jerk signals in Z axis
+12 `tBodyGyro-mean()-X` Mean of angular velocity signals in X axis
+13 `tBodyGyro-mean()-Y` Mean of angular velocity signals in Y axis
+14 `tBodyGyro-mean()-Z` Mean of angular velocity signals in Z axis
+15 `tBodyGyroJerk-mean()-X` Mean of angular jerk signals in signals in X axis
+16 `tBodyGyroJerk-mean()-Y` Mean of angular jerk signals in signals in Y axis
+17 `tBodyGyroJerk-mean()-Z` Mean of angular jerk signals in signals in Z axis
+18 `tBodyAccMag-mean()` Mean of magnitude of three-dimensional body linear acceleration
+19 `tGravityAccMag-mean()` Mean of magnitude of three-dimensional gravity acceleration
+20 `tBodyAccJerkMag-mean()` Mean of magnitude of three-dimensional body jerk
+21 `tBodyGyroMag-mean()` Mean of magnitude of three-dimensional angular velocity
+22 `tBodyGyroJerkMag-mean()` Mean of magnitude of three-dimensional angular jerk
+23 `fBodyAcc-mean()-X` Mean of Fast Fourier Transform (FFT) applied body linear acceleration signals in X axis
+24 `fBodyAcc-mean()-Y` Mean of Fast Fourier Transform (FFT) applied body linear acceleration signals in Y axis
+25 `fBodyAcc-mean()-Z` Mean of Fast Fourier Transform (FFT) applied body linear acceleration signals in Z axis
+26 `fBodyAcc-meanFreq()-X` Weighted average of the frequency components to obtain a mean frequency of Fast Fourier Transform (FFT) applied body linear acceleration signals in X axis
+27 `fBodyAcc-meanFreq()-Y` Weighted average of the frequency components to obtain a mean frequency of Fast Fourier Transform (FFT) applied body linear acceleration signals in Y axis
+28 `fBodyAcc-meanFreq()-Z` Weighted average of the frequency components to obtain a mean frequency of Fast Fourier Transform (FFT) applied body linear acceleration signals in Z axis
+29 `fBodyAccJerk-mean()-X` Mean of Fast Fourier Transform (FFT) applied body linear jerk signals in X axis
+30 `fBodyAccJerk-mean()-Y` Mean of Fast Fourier Transform (FFT) applied body linear jerk signals in Y axis
+31 `fBodyAccJerk-mean()-Z` Mean of Fast Fourier Transform (FFT) applied body linear jerk signals in Z axis
+32 `fBodyAccJerk-meanFreq()-X` Weighted average of the frequency components to obtain a mean Fast Fourier Transform (FFT) applied frequency of body linear jerk signals in three directions in X, Y, and Z axes
+33 `fBodyAccJerk-meanFreq()-Y` Weighted average of the frequency components to obtain a mean Fast Fourier Transform (FFT) applied frequency of body linear jerk signals in three directions in X, Y, and Z axes
+34 `fBodyAccJerk-meanFreq()-Z` Weighted average of the frequency components to obtain a mean Fast Fourier Transform (FFT) applied frequency of body linear jerk signals in three directions in X, Y, and Z axes
+35 `fBodyGyro-mean()-X` Mean of Fast Fourier Transform (FFT) applied body angular velocity signals in X axis
+36 `fBodyGyro-mean()-Y` Mean of Fast Fourier Transform (FFT) applied body angular velocity signals in Y axis
+37 `fBodyGyro-mean()-Z` Mean of Fast Fourier Transform (FFT) applied body angular velocity signals in Z axis
+38 `fBodyGyro-meanFreq()-X` Weighted average of the frequency components to obtain a mean frequency of Fast Fourier Transform (FFT) applied body angular velocity signals in three directions in X axis
+39 `fBodyGyro-meanFreq()-Y` Weighted average of the frequency components to obtain a mean frequency of Fast Fourier Transform (FFT) applied body angular velocity signals in three directions in Y axis
+40 `fBodyGyro-meanFreq()-Z` Weighted average of the frequency components to obtain a mean frequency of Fast Fourier Transform (FFT) applied body angular velocity signals in three directions in Z axis
+41 `fBodyAccMag-mean()` Mean of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body linear acceleration signals
+42 `fBodyAccMag-meanFreq()` Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body linear acceleration
+43 `fBodyAccJerkMag-mean()` Mean of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body jerk signals
+44 `fBodyAccJerkMag-meanFreq()` Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body jerk signals
+45 `fBodyGyroMag-mean()` Mean of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body angular velocity signals
+46 `fBodyGyroMag-meanFreq()` Weighted average of the frequency components to obtain a mean frequency of magnitude of Fast Fourier Transform (FFT) applied body angular velocity signals
+47 `fBodyGyroJerkMag-mean()` Mean of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body jerk signals
+48 `fBodyGyroJerkMag-meanFreq()` Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body jerk signals
+49 `tBodyAcc-std()-X` Standard deviation of body linear acceleration signals in X axis
+50 `tBodyAcc-std()-Y` Standard deviation of body linear acceleration signals in Y axis
+51 `tBodyAcc-std()-Z` Standard deviation of body linear acceleration signals in Z axis
+52 `tGravityAcc-std()-X` Standard deviation of gravity acceleration signals in X axis
+53 `tGravityAcc-std()-Y` Standard deviation of gravity acceleration signals in Y axis
+54 `tGravityAcc-std()-Z` Standard deviation of gravity acceleration signals in Z axis
+55 `tBodyAccJerk-std()-X` Standard deviation of body linear jerk signals in X axis
+56 `tBodyAccJerk-std()-Y` Standard deviation of body linear jerk signals in Y axis
+57 `tBodyAccJerk-std()-Z` Standard deviation of body linear jerk signals in Z axis
+58 `tBodyGyro-std()-X` Standard deviation of body angular velocity in X axis
+59 `tBodyGyro-std()-Y` Standard deviation of body angular velocity in Y axis
+60 `tBodyGyro-std()-Z` Standard deviation of body angular velocity in Z axis
+61 `tBodyGyroJerk-std()-X` Standard deviation of body angular jerk in X axis
+62 `tBodyGyroJerk-std()-Y` Standard deviation of body angular jerk in Y axis
+63 `tBodyGyroJerk-std()-Z` Standard deviation of body angular jerk in Z axis
+64 `tBodyAccMag-std()` Standard deviation of magnitude of three-dimensional body linear acceleration signals
+65 `tGravityAccMag-std()` Standard deviation of magnitude of three-dimensional gravity acceleration signals
+66 `tBodyAccJerkMag-std()` Standard deviation of magnitude of three-dimensional body linear jerk signals
+67 `tBodyGyroMag-std()` Standard deviation of magnitude of three-dimensional body angular velocity signals
+68 `tBodyGyroJerkMag-std()` Standard deviation of magnitude of three-dimensional body angular jerk signals
+69 `fBodyAcc-std()-X`: Standard deviation of Fast Fourier Transform (FFT) applied body linear acceleration signals in X axis
+70 `fBodyAcc-std()-Y`: Standard deviation of Fast Fourier Transform (FFT) applied body linear acceleration signals in Y axis
+71 `fBodyAcc-std()-Z`: Standard deviation of Fast Fourier Transform (FFT) applied body linear acceleration signals in Z axis
+72 `fBodyAccJerk-std()-X`: Standard deviation of Fast Fourier Transform (FFT) applied body linear jerk signals in X axis
+73 `fBodyAccJerk-std()-Y`: Standard deviation of Fast Fourier Transform (FFT) applied body linear jerk signals in Y axis
+74 `fBodyAccJerk-std()-Z`: Standard deviation of Fast Fourier Transform (FFT) applied body linear jerk signals in Z axis
+75 `fBodyGyro-std()-X`: Standard deviation of Fast Fourier Transform (FFT) applied body angular velocity signals in X axis
+76 `fBodyGyro-std()-Y`: Standard deviation of Fast Fourier Transform (FFT) applied body angular velocity signals in Y axis
+77 `fBodyGyro-std()-Z`: Standard deviation of Fast Fourier Transform (FFT) applied body angular velocity signals in Z axis
+78 `fBodyAccMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body linear acceleration signals
+79 `fBodyBodyAccJerkMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body linear jerk signals
+80 `fBodyBodyGyroMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body angular velocity signals
+81 `fBodyBodyGyroJerkMag-std()`: Standard deviation of magnitude of three-dimensional Fast Fourier Transform (FFT) applied body angular jerk signals
