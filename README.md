@@ -104,8 +104,11 @@ dataTidy <- group_by(dataMeanStd, subject, activity) %>%
 ### Exporting tidy data
 -------------
 ```
+write.csv(dataMeanStd, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataMeanStd.csv")
 write.csv(dataTidy, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataTidy.csv")
 ```
-* I export the tidy data as .csv format. You can see the file in this repository.
+* I export the data as .csv format. You can see the files in this repository.
+* `dataMeanStd.csv`: Data after Step 4.
+* `dataTidy.csv`: Data after Step 5.
 
 
