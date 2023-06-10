@@ -86,11 +86,12 @@ head(dataMeanStd$activity, 50)
 ```
 * The activity description corresponding to the number 1 to 6 was listed in second column of "activity_labels.txt".
 * I combined of `for` loop and `gsub()` function to replace the number with activity description.
-* The `dataMeanStd` is the result of the Step 3. You can see the description of activity when you execute `head(dataMeanStd$activity, 50)`.
+* You can see the description of activity when you execute `head(dataMeanStd$activity, 50)`.
 
 ### Step 4. Appropriately labels the data set with descriptive variable names.
 -------------
 I labeled variable names before completely merging the training and test sets in Step 1.
+Therefore, the `dataMeanStd` is the result of the Step 4. 
 
 ### Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 -------------
@@ -99,15 +100,15 @@ dataTidy <- group_by(dataMeanStd, subject, activity) %>%
   summarise_at(names(dataMeanStd)[-(1:2)], mean)
 ```
 * I used `group_by()` and `summarise_at()` functions in `dplyr` package.
-* `dataTidy` is final result of the Step 5.
+* `dataTidy` is result of the Step 5.
 
-### Exporting data sets
+### Exporting the data sets
 -------------
 ```
 write.csv(dataMeanStd, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataMeanStd.csv")
 write.csv(dataTidy, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataTidy.csv")
 ```
-* I export the data as .csv format. You can see the files in this repository.  
+* I export the data sets as .csv format. You can see following files in this repository.  
 * `dataMeanStd.csv`: The data set in Step 4.  
 * `dataTidy.csv`: The data set in Step 5 (A second, independent tidy data set with the average of each variable for each activity and each subject).
 
