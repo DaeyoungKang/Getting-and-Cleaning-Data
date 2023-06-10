@@ -1,43 +1,63 @@
 `Subject`: An identifier of the subjects who carried out the experiment (1 to 30).  
 `activity`: type of activity described in "activity_labels.txt" (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)  
-`tBodyAcc-mean()-XYZ`
-`tGravityAcc-mean()-XYZ`
-`tBodyAccJerk-mean()-XYZ`
-`tBodyGyro-mean()-XYZ`
-`tBodyGyroJerk-mean()-XYZ`
-`tBodyAccMag-mean()`
-`tGravityAccMag-mean()`
-`tBodyAccJerkMag-mean()`
-`tBodyGyroMag-mean()`
-`tBodyGyroJerkMag-mean()`
-`fBodyAcc-XYZ-mean()`
-`fBodyAcc-XYZ-meanFreq()`
-`fBodyAccJerk-XYZ-mean()`
-`fBodyAccJerk-XYZ-meanFreq()`
-`fBodyGyro-XYZ-mean()`
-`fBodyGyro-XYZ-meanFreq()`
-`fBodyAccMag-mean()`
-`fBodyAccMag-meanFreq()`
-`fBodyAccJerkMag-mean()`
-`fBodyAccJerkMag-meanFreq()`
-`fBodyGyroMag-mean()`
-`fBodyGyroMag-meanFreq()`
-`fBodyGyroJerkMag-mean()`
-`fBodyGyroJerkMag-meanFreq()`
-`tBodyAcc-std()-XYZ`
-`tGravityAcc-std()-XYZ`
-`tBodyAccJerk-std()-XYZ`
-`tBodyGyro-std()-XYZ`
-`tBodyGyroJerk-std()-XYZ`
-`tBodyAccMag-std()`
-`tGravityAccMag-std()`
-`tBodyAccJerkMag-std()`
-`tBodyGyroMag-std()`
-`tBodyGyroJerkMag-std()`
-`fBodyAcc-std()-XYZ`
-`fBodyAccJerk-std()-XYZ`
-`fBodyGyro-std()-XYZ`
-`fBodyAccMag-std()`
-`fBodyBodyAccJerkMag-std()`
-`fBodyBodyGyroMag-std()`
-`fBodyBodyGyroJerkMag-std()`
+`tBodyAcc-mean()-X`: Mean of body linear acceleration signals in X axis
+`tBodyAcc-mean()-Y`: Mean of body linear acceleration signals in Y axis
+`tBodyAcc-mean()-Z`: Mean of body linear acceleration signals in Z axis
+`tGravityAcc-mean()-X`: Mean of gravity acceleration signals in X axis
+`tGravityAcc-mean()-Y`: Mean of gravity acceleration signals in Y zxis
+`tGravityAcc-mean()-Z`: Mean of gravity acceleration signals in Z axis
+`tBodyAccJerk-mean()-X`: Mean of body linear jerk signals in X axis
+`tBodyAccJerk-mean()-Y`: Mean of body linear jerk signals in Y axis
+`tBodyAccJerk-mean()-Z`: Mean of body linear jerk signals in Z axis
+`tBodyGyro-mean()-X`: Mean of angular velocity signals in X axis
+`tBodyGyro-mean()-Y`: Mean of angular velocity signals in Y axis
+`tBodyGyro-mean()-Z`: Mean of angular velocity signals in Z axis
+`tBodyGyroJerk-mean()-X`: Mean of angular jerk signals in signals in X axis
+`tBodyGyroJerk-mean()-Y`: Mean of angular jerk signals in signals in Y axis
+`tBodyGyroJerk-mean()-Z`: Mean of angular jerk signals in signals in Z axis
+`tBodyAccMag-mean()`: Mean of magnitude of three-dimensional body linear acceleration
+`tGravityAccMag-mean()`: Mean of magnitude of three-dimensional gravity acceleration
+`tBodyAccJerkMag-mean()`: Mean of magnitude of three-dimensional body jerk
+`tBodyGyroMag-mean()`: Mean of magnitude of three-dimensional angular velocity
+`tBodyGyroJerkMag-mean()`: Mean of magnitude of three-dimensional angular jerk
+`fBodyAcc-XYZ-mean()`: Mean of body linear acceleration signals in three directions of X, Y, and Z axes
+`fBodyAcc-XYZ-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of body linear acceleration signals in three directions in X, Y, and Z axes
+`fBodyAccJerk-XYZ-mean()`: Mean of body linear jerk signals in three directions of X, Y, and Z axes
+`fBodyAccJerk-XYZ-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of body linear jerk signals in three directions in X, Y, and Z axes
+`fBodyGyro-XYZ-mean()`: Mean of body angular velocity signals in three directions of X, Y, and Z axes
+`fBodyGyro-XYZ-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of body angular velocity signals in three directions in X, Y, and Z axes
+`fBodyAccMag-mean()`: Mean of magnitude of three-dimensional body linear acceleration signals
+`fBodyAccMag-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional body linear acceleration
+`fBodyAccJerkMag-mean()`: Mean of magnitude of three-dimensional body jerk signals
+`fBodyAccJerkMag-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional body jerk signals
+`fBodyGyroMag-mean()`: Mean of magnitude of three-dimensional body angular velocity signals
+`fBodyGyroMag-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of magnitude of body angular velocity signals
+`fBodyGyroJerkMag-mean()`: Mean of magnitude of three-dimensional body jerk signals
+`fBodyGyroJerkMag-meanFreq()`: Weighted average of the frequency components to obtain a mean frequency of magnitude of three-dimensional body jerk signals
+`tBodyAcc-std()-X`: Standard deviation of body linear acceleration signals in X axis
+`tBodyAcc-std()-Y`: Standard deviation of body linear acceleration signals in Y axis
+`tBodyAcc-std()-Z`: Standard deviation of body linear acceleration signals in Z axis
+`tGravityAcc-std()-X`: Standard deviation of gravity acceleration signals in X axis
+`tGravityAcc-std()-Y`: Standard deviation of gravity acceleration signals in Y axis
+`tGravityAcc-std()-Z`: Standard deviation of gravity acceleration signals in Z axis
+`tBodyAccJerk-std()-X`: Standard deviation of body linear jerk signals in X axis
+`tBodyAccJerk-std()-Y`: Standard deviation of body linear jerk signals in Y axis
+`tBodyAccJerk-std()-Z`: Standard deviation of body linear jerk signals in Z axis
+`tBodyGyro-std()-X`: Standard deviation of body angular velocity in X axis
+`tBodyGyro-std()-Y`: Standard deviation of body angular velocity in Y axis
+`tBodyGyro-std()-Z`: Standard deviation of body angular velocity in Z axis
+`tBodyGyroJerk-std()-X`: Standard deviation of body angular jerk in X axis
+`tBodyGyroJerk-std()-Y`: Standard deviation of body angular jerk in Y axis
+`tBodyGyroJerk-std()-Z`: Standard deviation of body angular jerk in Z axis
+`tBodyAccMag-std()`: Standard deviation of magnitude of three-dimensional body linear acceleration signals
+`tGravityAccMag-std()`: Standard deviation of magnitude of three-dimensional gravity acceleration signals
+`tBodyAccJerkMag-std()`: Standard deviation of magnitude of three-dimensional body linear jerk signals
+`tBodyGyroMag-std()`: Standard deviation of magnitude of three-dimensional body angular velocity signals
+`tBodyGyroJerkMag-std()`: Standard deviation of magnitude of three-dimensional body angular jerk signals
+`fBodyAcc-std()-XYZ`: Standard deviation of body linear acceleration signals in three directions of X, Y, and Z axes
+`fBodyAccJerk-std()-XYZ`: Standard deviation of body linear jerk signals in three directions of X, Y, and Z axes
+`fBodyGyro-std()-XYZ`: Standard deviation of body angular velocity signals in three directions of X, Y, and Z axes
+`fBodyAccMag-std()`: Standard deviation of magnitude of three-dimensional body linear acceleration signals
+`fBodyBodyAccJerkMag-std()`: Standard deviation of magnitude of three-dimensional body linear jerk signals
+`fBodyBodyGyroMag-std()`: Standard deviation of magnitude of three-dimensional body angular velocity signals
+`fBodyBodyGyroJerkMag-std()`: Standard deviation of magnitude of three-dimensional body angular jerk signals
