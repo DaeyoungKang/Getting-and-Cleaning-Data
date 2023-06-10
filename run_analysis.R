@@ -49,5 +49,5 @@ head(dataMeanStd$activity, 50)
 dataTidy <- group_by(dataMeanStd, subject, activity) %>%
   summarise_at(names(dataMeanStd)[-(1:2)], mean)
 
-### Export tidy data
-write.csv(dataTidy, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataTidy.csv")
+### Export data
+write.table(dataTidy, "/Users/gd/Library/CloudStorage/Dropbox/DataScience/03GettingAndCleaningData/Course/dataTidy.txt", row.name=FALSE)
